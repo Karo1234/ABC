@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+  <html  lang="en">
+    <head>
+	   <title>web page</title>
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	                        <script  src="web_page.js"></script>
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity=" sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<style type="text/css">
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+		background: #000;
+       
+}
+
+	.navbar-brand{
+		padding: 25px 0 0 100px;
+		font-family: sans-serif;
+
+	}
+.img
+{
+	margin-left: 50px;
+}
+
+
+ ul li a
+{
+	margin:10px 10px 5px 30px;
+	height: 1vh;
+/*	color:#000;
+*/
+}	
+
+.dropdown  ul li 
+{
+margin: 1px 25px 10px 5px;
+padding: 0 0px 0 0;
+line-height: 2px;
+height: 3vw;
+}
+
+  
+.animate{
+	font-size: 20px;
+	
+}
+
+
+@media screen and (min-width: 500px){
+
+.form-group ,#icn  img{
+	margin:  50px 50px 0 100px
+}
+
+.nav-item {
+	display: flex;
+	justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0px;
+}
+
+.nav-item img{
+  margin:30px 20px 20px 50px;
+}
+
+.nav-item_3 > img{
+	transform: rotate(90deg);
+	width: 250px;
+    height: 150px;
+
+}
+
+.container-footer
+{
+  background-color: #555;
+  height: 9vw;
+  margin-top: 30px;
+  color: #000;
+}
+
+.rows ul, li {
+	display:flex;
+	justify-content: center;
+	line-height: 15px;
+    font-family: sans-serif;
+}
+
+.rows ul, li a:link	{
+	    color: #0000ff;
+	    font-weight: bold;
+       padding: 20px 0 0 0;
+}
+
+.paragraph{
+	font-style:italic;
+	padding: 20px 0 0 70%;
+  
+}
+}
+
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+ <div class="container-fluid">
+ 	<div class="navbar-header">
+ 	<button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#target">
+ 	<span class="icon-bar"></span>
+ 	<span class="icon-bar"></span>
+ 	<span class="icon-bar"></span>
+ 	 	</button> 
+
+ 	 <img class="img" src="Icn/silver.jpg" width="70" height="70">
+      <a class="navbar-brand"  href="#"  id="txt1 "><p class="text-white">Silver Design</p></a>
+ 	</div>
+
+  <ul class="nav navbar-nav">
+  	<li  class= "nav-item  dropdown">
+  	<a class="nav-link dropdown-toggle" data-toggle="dropdown">RINGS
+  	<span class="caret"></span>
+  </a>
+  	 <ul class="dropdown-menu">
+  	 	<li><a class="dropdown-item" href="icn/8.JPG">Stones</a></li>
+  	 	<li><a class="dropdown-item" href="icn/6.jpg">Handmade</a></li>
+  	 	<li><a class="dropdown-item" href="icn/7.JPG">New</a></li>
+  	 </ul>
+   </li>
+
+  	<li  class="nav-item dropdown">
+  	<a  class="nav-link dropdown-toggle"  data-toggle="dropdown">CROSSES
+  	<span class="caret"></span></a>
+     <ul class="dropdown-menu ">
+     	<li><a  class="dropdown-item" href="icn/20.jpg">Small
+        <li><a  class="dropdown-item" href="icn/21.jpg">Big</a></li>
+     </ul>
+  	</li>
+
+  	<li  class="nav-item dropdown">
+  		<a class="nav-link dropdown-toggle"  data-toggle="dropdown">SETS</a></li>  
+  	<li  class="nav-item">
+  		<a class="nav-link dropdown-toggle"  data-toggle="dropdown">NECKLACES</a></li>
+  	<li  class="nav-item">
+  		<a class="nav-link dropdown-toggle"  data-toggle="dropdown">ABOUT US</a></li>
+  </ul>
+ </div>
+</nav>
+<main><br><br>
+<div id="demo"></div>
+<form  class="form-group">
+	<input type="button"   class="left"  value=" < "  onclick="previous()">
+	<img id="icn" src="necklace/115.jpg" width="1300px"  height="400px">
+    <input type="button" class="right"  value=" > "   onclick="Next()">
+</form>
+
+
+<span id="start"></span>
+ <a name="top" img src="RINGS/2.jpg"  width="300"  height="300"></a>
+
+<nav  class="nav-item">
+	<img src="RINGS/1.jpg"  width="250"  height="200">
+	<img src="RINGS/11.jpg" width="250"  height="200">
+	<img src="RINGS/3.jpg"  width="250"  height="200">
+	<img src="RINGS/4.jpg"  width="250"  height="200">
+</nav>	
+
+<nav  class="nav-item">
+    <img src="RINGS/5.jpg"       width="250"  height="200"/>
+	<img src="necklace/icn.jpg"  width="250"  height="200"/>
+	<img src="RINGS/four.jpg"    width="250"  height="200"/>
+	<img src="RINGS/cepov.jpg"   width="250"  height="200"/>
+</nav>
+
+
+<nav  class="nav-item">
+    <img src="RINGS/10.jpg"    width="250"  height="200"/>
+	<img src="RINGS/11.jpg"    width="250"  height="200"/>
+	<img src="RINGS/12.jpg"    width="250"  height="200"/>
+	<img src="RINGS/13.jpg"    width="250"  height="200"/>
+</nav>
+
+<nav  class="nav-item">
+    <img src="RINGS/14.jpg"    width="250"  height="200"/>
+	<img src="RINGS/15.jpg"    width="250"  height="200"/>
+	<img src="RINGS/16.jpg"    width="250"  height="200"/>
+	<img src="RINGS/17.jpeg"   width="250"  height="200"/>
+</nav>
+
+<nav  class="nav-item">
+    <img src="icn/6.jpg"       width="250"  height="200"/>
+	<img src="icn/7.jpg"       width="250"  height="200"/>
+	<img src="RINGS/4.jpg"    width="250"  height="200"/>
+	<img src="RINGS/8.jpeg"   width="250"  height="200"/>
+</nav>
+</main>
+
+
+
+
+<footer>
+	<div class="container-footer">
+		<div class="rows">
+		 <ul>
+		 	<li><a href="#">Rings</a></li>
+		    <li><a href="#">Crosses</a></li>
+		 	<li><a href="#">Sets</a></li>
+		 	<li><a href="#">Necklaces</a></li>
+		 	<li><a href="#">About us</a></li>
+		 </ul>
+		</div>
+
+
+		<p  class="paragraph">&copy;&nbsp;Silver Design&nbsp;2019</p>
+</footer>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12187.777836994885!2d44.5317642!3d40.2102984!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shy!2s!4v1554388777927!5m2!1shy!2s"
+ width="100%" height="200" frameborder="10" style="border:0;opacity: 0.5" allowfullscreen>
+ </iframe>
+	</div>
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
